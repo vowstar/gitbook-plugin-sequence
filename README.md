@@ -24,11 +24,13 @@ book.json add the plugin
 
 ## Configuration
 
+The default config is ``"theme": "simple"``.
+
 book.json add the js-sequence-diagrams options
 
 ```
 "pluginsConfig": {
-  "sequence-diagrams": {
+  "sequence": {
     "theme": "simple"
   }
 }
