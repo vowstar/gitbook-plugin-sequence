@@ -1,16 +1,21 @@
 # gitbook-plugin-sequence
 
-[![NPM](https://nodei.co/npm/gitbook-plugin-sequence.png)](https://nodei.co/npm/gitbook-plugin-sequence/)
+[![Build Status](https://github.com/vowstar/gitbook-plugin-sequence/actions/workflows/test.yml/badge.svg)](https://github.com/vowstar/gitbook-plugin-sequence/actions)
+[![Coverage Status](https://coveralls.io/repos/github/vowstar/gitbook-plugin-sequence/badge.svg?branch=master)](https://coveralls.io/github/vowstar/gitbook-plugin-sequence?branch=master)
+[![NPM Version](https://img.shields.io/npm/v/gitbook-plugin-sequence.svg?style=flat)](https://www.npmjs.org/package/gitbook-plugin-sequence)
+[![NPM Downloads](https://img.shields.io/npm/dm/gitbook-plugin-sequence.svg?style=flat)](https://www.npmjs.org/package/gitbook-plugin-sequence)
 
-[js-sequence-diagrams](https://github.com/bramp/js-sequence-diagrams) plugin for [GitBook](https://github.com/GitbookIO/gitbook)
+[js-sequence-diagrams](https://github.com/bramp/js-sequence-diagrams) plugin for [Honkit](https://github.com/honkit/honkit) ~~and [GitBook](https://github.com/GitbookIO/gitbook)~~.
 
 ## Installation
 
-    $ npm install gitbook-plugin-sequence
+```bash
+npm install gitbook-plugin-sequence
+```
 
 book.json add the plugin
 
-```
+```json
 {
   "plugins": ["sequence"]
 }
@@ -28,7 +33,7 @@ The default config is ``"theme": "simple"``.
 
 book.json add the js-sequence-diagrams options
 
-```
+```json
 "pluginsConfig": {
   "sequence": {
     "theme": "simple"
@@ -52,7 +57,7 @@ To include a sequence diagram, just wrap your definition in a "sequence" code bl
 
 Also you can put in your book block as
 
-```
+```json
 {% sequence %}
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
@@ -62,9 +67,11 @@ Bob-->Alice: I am good thanks!
 
 ### Extend the width
 
-```
+```json
 {% sequence width=770 %}
 ```
+
+## Thanks
 
 This project learn from:
 
@@ -73,3 +80,12 @@ This project learn from:
 * [massanek/gitbook-plugin-js-sequence-diagram](https://github.com/gmassanek/gitbook-plugin-js-sequence-diagram).
 * [nsdont/gitbook-plugin-new-flowchart](https://github.com/nsdont/gitbook-plugin-new-flowchart).
 * [lyhcode/gitbook-plugin-plantuml](https://github.com/lyhcode/gitbook-plugin-plantuml).
+
+## See also
+
+These plugins are also available on honkit.
+
+|                                    Plugin                                     |                      Description                       |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [gitbook-plugin-uml](https://github.com/vowstar/gitbook-plugin-uml)           | A plug-in that use plantuml to draw beautiful pictures |
+| [gitbook-plugin-wavedrom](https://github.com/vowstar/gitbook-plugin-wavedrom) | A plug-in that can draw waveforms and register tables  |

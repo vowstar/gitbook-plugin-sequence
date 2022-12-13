@@ -6,21 +6,29 @@
     "url": "https://github.com/vowstar/gitbook-plugin-sequence/issues"
   },
   "dependencies": {
-    "phantom": "^2.0.0",
-    "q": "^1.4.1"
+    "puppeteer": "^19.x",
+    "q": "^1.x"
   },
-  "description": "js-sequence-diagrams plugin for GitBook",
-  "devDependencies": {},
+  "description": "js-sequence-diagrams plugin for GitBook and Honkit",
+  "devDependencies": {
+    "coveralls": "^3.x",
+    "honkit-tester": "^1.x",
+    "is-svg": "^4.x",
+    "jshint": "^2.x",
+    "mocha": "^10.x",
+    "nyc": "^15.x"
+  },
   "directories": {},
   "engines": {
-    "gitbook": ">=3.0.0"
+    "gitbook": "*"
   },
   "homepage": "https://github.com/vowstar/gitbook-plugin-sequence",
   "keywords": [
     "diagrams",
-    "sequence",
+    "gitbook",
+    "honkit",
     "plugin",
-    "gitbook"
+    "sequence"
   ],
   "license": "MIT",
   "main": "index.js",
@@ -36,6 +44,11 @@
     "type": "git",
     "url": "git+https://github.com/vowstar/gitbook-plugin-sequence.git"
   },
-  "scripts": {},
-  "version": "0.1.1"
+  "scripts": {
+    "lint": "jshint *.js test/**.js",
+    "pretest": "npm run lint",
+    "test": "nyc --reporter=lcov mocha --reporter spec --timeout 20000",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "version": "1.0.0"
 }
