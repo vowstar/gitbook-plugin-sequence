@@ -57,7 +57,7 @@ To include a sequence diagram, just wrap your definition in a "sequence" code bl
 
 Also you can put in your book block as
 
-```json
+```bash
 {% sequence %}
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
@@ -67,7 +67,7 @@ Bob-->Alice: I am good thanks!
 
 ### Extend the width
 
-```json
+```bash
 {% sequence width=770 %}
 ```
 
