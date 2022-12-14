@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/vowstar/gitbook-plugin-sequence",
   "keywords": [
-    "js-sequence-diagrams",
     "gitbook",
     "honkit",
-    "plugin",
+    "js-sequence-diagrams",
+    "markdown",
     "sequence"
   ],
   "license": "MIT",
