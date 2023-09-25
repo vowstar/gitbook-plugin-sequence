@@ -1,10 +1,10 @@
 /*jshint esversion: 8 */
 
-var path = require('path');
-var tester = require('honkit-tester');
-var assert = require('assert');
+const path = require('path');
+const tester = require('honkit-tester');
+const assert = require('assert');
 
-var pkg = require('../package.json');
+const pkg = require('../package.json');
 
 describe('sequence', function() {
     this.timeout(50000);
