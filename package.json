@@ -6,7 +6,7 @@
     "url": "https://github.com/vowstar/gitbook-plugin-sequence/issues"
   },
   "dependencies": {
-    "puppeteer": "^21.x",
+    "puppeteer": "^22.x",
     "q": "^1.x"
   },
   "description": "js-sequence-diagrams plugin for GitBook and Honkit",
