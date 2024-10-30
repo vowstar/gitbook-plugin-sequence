@@ -2,3 +2,8 @@ node_modules/
 coverage/
 .nyc_output/
 .tester.log
+assets/raphael
+assets/sequence-diagram
+assets/snap-svg
+assets/underscore
+assets/webfont
